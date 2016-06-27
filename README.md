@@ -20,13 +20,7 @@
 
 ##### 7. UPDATE table_name SET column = data_value [ WHERE column_name <relational_operator> data_value ]
 
-##### 8. SELECT { column_name } FROM table_name
-[ WHERE column_name <condition> [(AND | OR) column_name <condition>] ]
-[ ORDER BY column_name [DESC] ]
-OR
-SELECT <aggregate>(column_name) FROM table_name
-[ WHERE column_name <condition> [(AND | OR) column_name <condition>] ]
-[ ORDER BY column_name [DESC] ]
+##### 8. SELECT { column_name } FROM table_name [ WHERE column_name <condition> [(AND | OR) column_name <condition>] ] [ ORDER BY column_name [DESC] ] OR SELECT <aggregate>(column_name) FROM table_name [ WHERE column_name <condition> [(AND | OR) column_name <condition>] ] [ ORDER BY column_name [DESC] ]
   1. <condition> : <relational_operator> data_value 
   2. <condition> : IS NULL
   3. <condition> : IS NOT NULL
