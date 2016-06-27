@@ -1,18 +1,25 @@
 # Mini database in C
 ## Semantics
 ##### 1. CREATE TABLE table_name ({column_name <data_type> [NOT NULL]}) <data_type> : INT, CHAR(n)
+
 ##### 2. DROP TABLE table_name
+
 ##### 3. LIST TABLE
+
 ##### 4. LIST SCHEMA FOR table_name [TO report_filename]
+
 ##### 5. INSERT INTO table_name VALUES (  { data_value }  )
   1. <date_value> can be any <string literal>, integer literal, or the keyword NULL
   2. <string literal> : ‘any string enclosed with single quotes’
   3. String literal is case sensitive.
   4. e.g. db “insert into tab1 values (‘Student Name’, 12345, NULL)”
+
 ##### 6. DELETE FROM table_name [ WHERE column_name <relational_operator> data_value ]
   1. <relation_operator> can be >, <, or =
   2. e.g. db “delete from tab1 where gender = ‘F’
+
 ##### 7. UPDATE table_name SET column = data_value [ WHERE column_name <relational_operator> data_value ]
+
 ##### 8. SELECT { column_name } FROM table_name
 [ WHERE column_name <condition> [(AND | OR) column_name <condition>] ]
 [ ORDER BY column_name [DESC] ]
